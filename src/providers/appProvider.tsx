@@ -1,4 +1,6 @@
 import { ReactNode } from "react";
+import { StrictMode } from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import { ThemeProvider } from "./themeProviderContext";
 
@@ -7,5 +9,11 @@ type AppProviderProps = {
 };
 
 export const AppProvider = ({ children }: AppProviderProps) => {
-  return <ThemeProvider defaultTheme="light">{children}</ThemeProvider>;
+  return (
+    <StrictMode>
+      <BrowserRouter>
+        <ThemeProvider defaultTheme="light">{children}</ThemeProvider>
+      </BrowserRouter>
+    </StrictMode>
+  );
 };
