@@ -1,2 +1,5 @@
-export { default as ThemeToggle } from "./themeToggle";
-export { default as AppLayout } from "./appLayout";
+export * from "./themeToggle";
+export * from "./appLayout";
+export * from "./header";
+export * from "./footer";
+export * from "./icon";

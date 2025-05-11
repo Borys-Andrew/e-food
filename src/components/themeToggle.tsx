@@ -4,7 +4,7 @@ import { useTheme } from "@/hooks";
 
 import { Button } from "./ui/button";
 
-const ThemeToggle = () => {
+export const ThemeToggle = () => {
   const { toggleTheme } = useTheme();
   return (
     <Button
@@ -18,5 +18,3 @@ const ThemeToggle = () => {
     </Button>
   );
 };
-
-export default ThemeToggle;
